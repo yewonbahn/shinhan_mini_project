@@ -87,8 +87,8 @@ async function submitArticle () {
     }
       
     async function uploadPost(data){
-  
-        document.body.insertAdjacentHTML('beforeEnd',
+      let maincontent = document.getElementById('main-content');
+      maincontent.insertAdjacentHTML('beforeEnd',
         `<div id=${data.id} class="card border-info mb-3" style="max-width: 50rem;">
         <div class="card-header">작성자: ${data.author}</div>
         <div class="card-body">
@@ -285,10 +285,16 @@ async function detailArticle (id) {
   }
 
   async function filterCategory (id) {
-    document.body.innerHTML=""
+    
+    let maincontent = document.getElementById('main-content');
+    maincontent.innerHTML=""
     let data = await getAllarticle();
+    console.log(id)
     data.forEach((post)=>{
-        uploadPost(post)
+      console.log(post.category.id===id)
+        if (post.category.id===id){
+          uploadPost(post)
+        }
       })
 
   }
