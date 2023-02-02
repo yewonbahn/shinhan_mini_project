@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GangwonEdu_OTFBoldA';
+    
+}
+
+/* @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+} */
+
+#modal {
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+
+#item {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#modal2 {
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+
+#item2{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+#editModal {
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+#edititem{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#detailModal {
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+#detailitem{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
